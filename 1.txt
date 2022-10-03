@@ -1,0 +1,30 @@
+
+> smd-importer@1.0.0 import D:\MOLFAR\1\smd-importer
+> node ./src/import "template.xlsx"
+
+config {
+  branch: 'master',
+  merge: { strategy: 'extend' },
+  mongo: {
+    url: 'mongodb+srv://jace:jace@molfar-sources.tjmxbnn.mongodb.net/?retryWrites=true&w=majority',
+    database: 'sources',
+    commits: 'commits',
+    data: { sources: 'sources', labels: 'tags', scripts: 'scanany' }
+  }
+}
+branch master
+commit 603b9327-01ba-47a5-ac61-826b89a1fd26
+sources  >  sources
+tags  >  labels
+scanany  >  scripts
+config {
+  branch: 'master',
+  merge: { strategy: 'extend' },
+  mongo: {
+    url: 'mongodb+srv://jace:jace@molfar-sources.tjmxbnn.mongodb.net/?retryWrites=true&w=majority',
+    database: 'sources',
+    commits: 'commits',
+    data: { sources: 'sources', labels: 'tags', scripts: 'scanany' }
+  }
+}
+Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? 

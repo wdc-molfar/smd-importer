@@ -1,0 +1,13 @@
+branch: master
+
+merge:
+  strategy: extend
+
+mongo:
+  url: "mongodb+srv://jace:jace@molfar-sources.tjmxbnn.mongodb.net/?retryWrites=true&w=majority"
+  database: sources
+  commits: commits
+  data:
+    sources: sources
+    labels: tags
+    scripts: scanany 

@@ -1,0 +1,38 @@
+{
+  "name": "smd-importer",
+  "version": "1.0.0",
+  "description": "Source Management Dashboard import utilities",
+  "main": "index.js",
+  "scripts": {
+    "validate": "node ./src/validate",
+    "import": "node ./src/import",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdc-molfar/smd-importer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wdc-molfar/smd-importer/issues"
+  },
+  "homepage": "https://github.com/wdc-molfar/smd-importer#readme",
+  "dependencies": {
+    "ajv-errors": "^3.0.0",
+    "ajv-formats": "^2.1.1",
+    "cron-parser": "^4.6.0",
+    "deep-extend": "^0.6.0",
+    "fast-glob": "^3.2.12",
+    "fs-extra": "^10.1.0",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "mongodb": "^4.10.0",
+    "node-cron": "^3.0.2",
+    "uuid": "^9.0.0",
+    "xlsx": "^0.18.5",
+    "yaml-ast-parser": "0.0.43",
+    "yaml-js": "^0.3.1"
+  }
+}
