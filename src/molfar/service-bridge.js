@@ -11,7 +11,7 @@ const mongo = require("mongodb").MongoClient
 
 
 
-const createCommit = branch => {
+const createCommit = (branch, source) => {
     
     return {
     
@@ -19,7 +19,8 @@ const createCommit = branch => {
         createdAt: new Date(),
         message:"import data",
         author: "@molfar source importer",
-        branch: branch
+        branch: branch,
+        source
     
     }
 
@@ -36,10 +37,11 @@ const prepare = data => {
     
     data.branch = createBranch()
     
-    data.commit = createCommit(data.branch)
+    data.commit = createCommit(data.branch, data.commitSource)
     
     data.sources = data.sources.map( d => {
         d.commit = data.commit.id
+        d.schedule = {}
         delete d._id
         return d
     })
@@ -64,7 +66,8 @@ const prepare = data => {
 const upload = async data => {
 
     data = prepare(data)
-    
+
+
     const config = loadConfig("./import.config.yml")
     // console.log("config", config)
         

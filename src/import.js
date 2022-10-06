@@ -35,8 +35,8 @@ const run = async () => {
 	let sourceBranch = resolve(db)(availableToImport) 
 	let uploadedData = merge.strategies.extend(sourceBranch, db.sources)
 
-
 	let result = await upload({
+			commitSource: db.commitSource,
 			sources: uploadedData.target,
 			labels: db.labels,
 			scripts: db.scripts

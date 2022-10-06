@@ -35,8 +35,12 @@ const load = async () => {
 
     lastCommit = (lastCommit[0]) ? lastCommit[0].id : undefined
     let result = {}
-    // console.log("commit", lastCommit)    
-
+ 
+    result.commitSource = {
+        branch: config.branch || "master",
+        commit: lastCommit
+    }
+ 
     if(lastCommit){
         let collections = keys(config.mongo.data)
 

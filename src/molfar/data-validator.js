@@ -82,7 +82,7 @@ const shouldBeCorrectScananyParams = sources => {
 					let validator = new SchemaValidator(f.schema)
 					let res = validator.validate(d.scanany.params)
 					if(!res) {
-						message = validator.errors.map( e => `Line ${e.line}: ${e.reason}`).join("\r\n")
+						message = "Task validation:\r\n"+validator.errors.map( e => `Line ${e.line}: ${e.reason}`).join("\r\n")
 					}
 
 				} else {
@@ -91,7 +91,7 @@ const shouldBeCorrectScananyParams = sources => {
 			}
 			d.status = (message) ? "WARNING" : ""
 			d.validation = d.validation || ""
-			d.validation += `Task validation:\r\n${message}\r\n`
+			d.validation += `${message}\r\n`
 		}
 		
 		return d
@@ -125,7 +125,9 @@ const validateSources = sources => {
 				shouldBeLabelsResolved ( 
 				shouldBeUniqueName(
 				shouldBeCorrectScananyParams(
-				shouldBeCorrectCron(sources) 
+				// shouldBeCorrectCron(
+					sources
+					// ) 
 				))))
 	return sources
 }
