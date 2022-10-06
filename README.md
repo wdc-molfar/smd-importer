@@ -19,9 +19,9 @@ npm install
 
 ## Prepare import
 
-Prepare import data in ```xlsx``` format such as template.txt.
+Prepare import data in ```xlsx``` format such as [template.xlsx](./template.xlsx).
 
-**Field description:**
+**Fields description:**
 - ```info.name``` - Source name.
 - ```info.description``` - Source description.
 - ```info.labels``` - Comma separated list of hierarhical labels.
@@ -49,7 +49,7 @@ npm run import <relative path to xlsx file>
 1. Importer loads source branch from [@molfar smd dashboard](https://nevada-jace-dev.herokuapp.com/design/@molfar-smd-schema).
 2. Importer loads and parse data from xlsx file.
 3. Importer validates data and resolves it, if it possible.
-4. Importer generate xlsx file with results of validation.
+4. Importer generate xlsx file with results of validation such as [template.validation.xlsx](./template.validation.xlsx).
 5. Importer use ```extend``` merge strategy for merges source data and target @molfar smd branch.
 6. Importer creates specific branch on @molfar smd dashboard and commits imported data.
 
