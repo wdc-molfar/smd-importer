@@ -32,7 +32,7 @@ Prepare import data in ```xlsx``` format such as [template.xlsx](./template.xlsx
 
 **Data validation rules**:
 - Source name should be unique.
-- Hierarhical labels hould be coresponded to [@molfar smd dashboard](https://nevada-jace-dev.herokuapp.com/design/@molfar-smd-schema).
+- Hierarhical labels should be coresponded to [@molfar smd dashboard](https://nevada-jace-dev.herokuapp.com/design/@molfar-smd-schema).
 - Name of Scanany script hould be coresponded to [@molfar smd dashboard](https://nevada-jace-dev.herokuapp.com/design/@molfar-smd-schema).
 - Source specific parameters for Scanany script should be validated with Scanany specific JSON-Schema. See [@molfar smd dashboard](https://nevada-jace-dev.herokuapp.com/design/@molfar-smd-schema).
 
