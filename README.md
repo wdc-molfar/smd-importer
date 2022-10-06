@@ -26,7 +26,9 @@ Prepare import data in ```xlsx``` format such as [template.xlsx](./template.xlsx
 - ```info.description``` - Source description.
 - ```info.labels``` - Comma separated list of hierarhical labels.
 - ```scanany.script``` - Name of Scanany script.
-- ```scanany params``` - Source specific parameters for Scanany script.
+- ```scanany.params``` - Source specific parameters for Scanany script.
+
+***Do not change fields name***
 
 **Data validation rules**:
 - Source name should be unique.
