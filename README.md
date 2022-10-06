@@ -35,7 +35,7 @@ Prepare import data in ```xlsx``` format such as [template.xlsx](./template.xlsx
 - Source specific parameters for Scanany script should be validated with Scanany specific JSON-Schema. See [@molfar smd dashboard](https://nevada-jace-dev.herokuapp.com/design/@molfar-smd-schema).
 
 ## Configuration
-See import.config.yml
+See [import.config.yml](./import.config.yml)
 
 
 ## Usage
